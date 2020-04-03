@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+// DATA TYPES
+int main(){
+    int a=4;
+    float pi=3.147;
+    char b='d';
+    bool ans=true;
+    cout<<a<<endl<<pi<<endl<<b<<endl<<ans;
+    return 0;
+}
+
+//LOCAL AND GLOBAL VARIABLES
+#include <iostream>
+using namespace std;
+//  This is a global variable
+int glo=6;
+void sum(){
+    cout<<glo<<endl;
+}
+int main(){
+// This is a local variable
+int glo=9;
+sum();
+cout<<glo<<endl;
+return 0;
+}
