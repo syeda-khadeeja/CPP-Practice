@@ -1,0 +1,33 @@
+// OPERATORS IN C++
+#include <iostream>
+using namespace std;
+int main(){
+    int a=4,b=5;
+// AIRTHMETIC OPERATOR 
+cout<<"a+b is "<<a+b<<endl;
+cout<<"a-b is "<<a-b<<endl;
+cout<<"a*b is "<<a*b<<endl;
+cout<<"a/b is "<<a/b<<endl;
+cout<<"a%b is "<<a%b<<endl;
+cout<<"a++ is "<<a++<<endl;
+cout<<"a-- is "<<a--<<endl;
+cout<<"++a is "<<++a<<endl;
+cout<<"--a is "<<--a<<endl;
+// ASSIGNMENT OPERATOR
+int a=4<<endl;
+char ans="d"<<endl;
+bool answer=true<<endl;
+// COMPARISION OPerATOR
+cout<<"a==b is "<<(a==b)<<endl;
+cout<<"a!=b is "<<(a!=b)<<endl;
+cout<<"a>b is "<<(a==b)<<endl;
+cout<<"a<b is "<<(a==b)<<endl;
+cout<<"a>=b is "<<(a>=b)<<endl;
+cout<<"a<=b is "<<(a<=b)<<endl;
+
+// LOGICAL OPERATORS
+cout<<"The value of this ((a==b) && (a>b)) logical and operator is  "<<((a==b) && (a>b))<<endl;
+cout<<"The value of this ((a==b) || (a>b)) logical or operator is  "<<((a==b) || (a>b))<<endl;
+cout<<"The value of this (!(a==b)) logical not operator is  "<<(!(a==b))<<endl;
+return 0;
+}
