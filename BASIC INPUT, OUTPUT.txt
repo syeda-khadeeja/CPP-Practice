@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b;
+// << this is insertion operator
+    cout<<"Enter the value of a "<<endl;
+// >> this is extraction operator
+    cin>>a;
+    cout<<"Enter the value of b "<<endl;
+    cin>>b;
+    return 0;
+}
