@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int marks[4]={49,50,36,45};
+    cout<<marks[0]<<endl;
+    cout<<marks[1]<<endl;
+    cout<<marks[2]<<endl;
+    cout<<marks[3]<<endl;
+
+    int mathsMarks[3];
+    mathsMarks[0]=55;
+    mathsMarks[1]=55;
+    mathsMarks[2]=55;
+cout<<"These are maths marks "<<endl;
+cout<<mathsMarks[0]<<endl;
+cout<<mathsMarks[1]<<endl;
+cout<<mathsMarks[2]<<endl;
+
+ // BY USING THE FOR LOOP
+
+ for (int i = 0; i < 4; i++)
+ {     cout<<marks[i]<<endl;
+ }
+
+    return 0;
+}
+// POINTERS AND ARRAYS
+// BASIC POINTER AIRTHMETIC FORMULA
+// address new = current address + i * sizeof(datatype)
+#include <iostream>
+using namespace std;
+int main(){
+    int marks[]={12,23,34,45};
+    int*p=marks;
+    cout<<"the value at *p is "<<*p<<endl;
+    cout<<"the value at *(p+1) is "<<*(p+1)<<endl;
+    cout<<"the value at *(p+2) is "<<*(p+2)<<endl;
+    cout<<"the value at *(p+3) is "<<*(p+3)<<endl;
+"\n";
+    cout<<*(p++)<<endl;
+    cout<<*p<<endl;
+    cout<<*(++p)<<endl;
+    
+
+
+    return 0;
+}
