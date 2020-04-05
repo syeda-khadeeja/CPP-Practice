@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+int sum(int a ,int b){
+    int c;
+    c=a+b;
+    return c;
+}
+int main(){
+    int num1;
+    int num2;
+    cout<<"Enter num1"<<endl;
+    cin>>num1;
+    cout<<"Enter num2"<<endl;
+    cin>>num2;
+    cout<<"the sum is "<<sum(num1,num2)<<endl;
+    return 0;
+}
+// ******FUNCTION ROTOTYPING********
+
+#include <iostream>
+using namespace std;
+
+// FUNCTION PROTOTYPE
+
+int sum(int,int);
+void g();
+
+int main(){
+
+// num1 and num2 are actual parameters
+
+    int num1;
+     int num2;
+     cout<<"Enter num1"<<endl;
+     cin>>num1;
+     cout<<"Enter num2"<<endl;
+     cin>>num2;
+     cout<<"the sum is "<<sum(num1,num2)<<endl;
+     g();
+    return 0;
+}
+int sum(int a,int b)
+
+// a and b will take values from actual parameters
+
+    {int c;
+    c=a+b;
+return c;
+    }
+void g(){
+    cout<<"GOOD MORNING";
+}
