@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main(){
+    // const keyword
+    const float a=56.45;
+     a=45;     //you will get an error bcz a is a constant
+    cout<<a<<endl;
+    return 0;
+}
+// MANIPULATORS
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main(){
+     // using setw keyword
+    int a=4, b=3 ,c=1234;
+    cout<<"The value of a without setw is "<<a<<endl;
+    cout<<"The value of b without setw is "<<b<<endl;
+    cout<<"The value of c without setw is "<<c<<endl;
+
+
+    cout<<"The value of a with setw is "<<setw(12)<<a<<endl;
+    cout<<"The value of b with setw is "<<setw(6)<<b<<endl;
+    cout<<"The value of a with setw is "<<setw(7)<<c<<endl;
+
+
+    return 0;
+}
+// OPERATOR PRECEDENCE
+#include <iostream>
+using namespace std;
+int main(){
+    int a =45 ,b =32;
+    int c= ((((a*5)+12)-78)+b);
+    cout<<c;
+    return 0;
+}
