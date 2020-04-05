@@ -1,0 +1,50 @@
+ // structure is a user defined datatype use to combine different datatype
+#include <iostream>
+using namespace std;
+    typedef struct employee{
+        int eId;
+        float salary;
+        char favChar;
+
+    }ep;
+
+int main(){
+    ep harry;
+    harry.eId=1234;
+    harry.favChar='c';
+    harry.salary=120000000;
+    cout<<harry.eId<<endl;
+    cout<<harry.salary<<endl;
+    cout<<harry.favChar<<endl;
+    return 0;
+}
+// UNION
+// union provide better memory management
+#include <iostream>
+using namespace std;
+union money{
+    int rice;
+    char car;
+    float pounds;
+};
+int main(){
+    union money m1;
+    m1.rice=34;
+ // m1.car=12000;  we cannot  use two values simultaneously if we use it will give garbage value
+    cout<<m1.rice;
+    return 0;
+}
+// ENUMS
+#include <iostream>
+using namespace std;
+int main(){
+    enum Meal{breakfast , lunch, dinner};
+    Meal m1=breakfast;
+    Meal m2=lunch;
+    cout<<m1<<endl;
+    cout<<m2<<endl;
+    cout<<breakfast<<endl;
+    cout<<lunch<<endl;
+    cout<<dinner<<endl;
+    return 0;
+}
