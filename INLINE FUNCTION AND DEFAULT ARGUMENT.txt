@@ -1,0 +1,53 @@
+// ******INLINE FUNCTIONS*******
+// Inline function reduces the time of compilation
+// Donot ue inline function in recursion 
+// Donot use inline fuction with static variable
+#include <iostream>
+using namespace std;
+int product(int a,int b){
+    //static int c=0;   // This executes only once
+   // c+=1;             // next time when function run , the value of c will be retained
+   return a*b;  //+c
+   
+}
+int main(){
+    int a, b;
+    cout<<"Enter the value of a and b"<<endl;
+    cin>>a;
+    cin>>b;
+    cout<<"The product of a and b is "<<product(a,b);
+    return 0;
+}
+
+
+// ******DEFAULT ARGUMENTS******
+
+
+#include <iostream>
+using namespace std;
+
+// InterestRate is a default argument and it must be on extreme right 
+
+float moneyReceived(int currentMoney, float InterestRate=1.04){
+      return currentMoney*InterestRate;
+}
+
+int main(){
+    int money=100000;
+    cout<<"If you have "<<money<<" Rs in your bank account ,you will receive "<<moneyReceived(money)<<" after 1 year";
+    cout<<"\n For VIP , If you have "<<money<<" Rs in your bank account ,you will receive "<<moneyReceived(money,1.1)<<" after 1 year";
+    return 0;
+}
+
+// ******CONSTANT ARGUMENTS*****
+#include <iostream>
+using namespace std;
+
+int strlen( const char *p){
+
+}
+
+int main(){
+    
+    return 0;
+}
