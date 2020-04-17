@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+class Employee
+{
+    int id;
+    static int count;  // Count is the static data member of class employee
+
+public:
+    void setData(void)
+    {
+        cout << "Enter the id " << endl;
+        cin >> id;
+        count++;
+    }
+    void getData(void)
+    {
+        cout << "The id of this employee is " << id<<" and this is employee number "<< count<<endl;
+    }
+    // it is a static function
+    static void getCount(void){
+        // cout<<id;  // this will throw error as static functions can only access static variables and id is not static variable 
+        cout<<"The value of count is "<<count <<endl;
+    }
+};
+ int Employee :: count;
+int main()
+{
+    Employee harry, rohan, Ali;
+
+    harry.setData();
+    harry.getData();
+
+Employee :: getCount();
+
+    rohan.setData();
+    rohan.getData();
+
+Employee ::getCount();
+
+    Ali.setData();
+    Ali.getData();
+
+Employee ::getCount();
+
+    return 0;
+}
