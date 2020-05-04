@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+class Complex
+{
+    int a, b;
+
+public:
+    Complex(int , int); // constructor declaration
+    void printNumber(void)
+    {
+        cout << "Your number is " << a << " + " << b << "i" << endl;
+        cout << "Hello World" << endl;
+    }
+};
+Complex :: Complex(int x , int y){
+     a = x;
+     b = y;
+};
+
+int main()
+
+ { // Implicit call
+    Complex a(4,6);
+    // Explicit call
+    Complex b = Complex(4,6);
+    a.printNumber();
+    b.printNumber();
+    return 0;}
+
+
+// another example
+#include <iostream>
+using namespace std;
+class point{
+    int x, y;
+ public:
+     point(int a , int b ){
+         x = a;
+         y = b;
+     }
+     void displayPoint(){
+         cout<<"The point is ( "<< x<<" , "<<y<<" )"<<endl;
+
+     }
+};
+int main(){
+    point p(1,1);
+    p.displayPoint();
+    point q(2,2);
+    q.displayPoint();
+    return 0;
+}
